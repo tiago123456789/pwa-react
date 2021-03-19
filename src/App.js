@@ -23,9 +23,9 @@ async function getTodos(isOnline) {
 
 const NavBar = () => (
   <div className="navbar">
-    <h3>Task Manager</h3>
-    <Link to="/">Current Tasks</Link>
-    <Link to="/completed">Completed Tasks</Link>
+    <h3>Listing users</h3>
+    <Link to="/">Current</Link>
+    <Link to="/completed">Completed</Link>
   </div>
 );
 
