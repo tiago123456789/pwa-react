@@ -1,5 +1,5 @@
 import React, { Component, useCallback, useEffect } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, HashRouter } from 'react-router-dom';
 import { Detector } from "react-detect-offline";
 
 import './App.css';
@@ -84,12 +84,12 @@ const CompletedTasks = () => (
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Route exact path="/" component={CurrentTasks} />
           <Route path="/completed" component={CompletedTasks} />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
